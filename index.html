@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Jarvis AI Assistant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@3.3.0/tsparticles.bundle.min.js"></script>
+</head>
+<body>
+
+<div id="tsparticles"></div>
+
+<div class="assistant-ui">
+  <div class="header">Jarvis</div>
+  <div class="chatbox" id="chatbox">
+    <div class="msg bot">Hello, I am <b>Jarvis</b>. How can I assist?</div>
+  </div>
+  <form class="input-bar" id="form" autocomplete="off" onsubmit="handleSubmit(event)">
+    <input id="textInput" placeholder="Type a question or command..." autocomplete="off" />
+    <button id="micBtn" type="button" title="Click to speak">
+      <div id="wave" class="wave"></div>
+      <svg fill="#fff" viewBox="0 0 24 24" height="30">
+        <path d="M12 15c1.667 0 3-1.333 3-3v-5c0-1.667-1.333-3-3-3s-3 1.333-3 3v5c0 1.667 1.333 3 3 3zm5-3c0 
+                2.775-2.225 5-5 5s-5-2.225-5-5h-2c0 3.307 2.542 
+                6.032 5.763 6.472v2.028h2.474v-2.028c3.221-0.44 
+                5.763-3.165 5.763-6.472h-2z"/>
+      </svg>
+    </button>
+  </form>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
+
